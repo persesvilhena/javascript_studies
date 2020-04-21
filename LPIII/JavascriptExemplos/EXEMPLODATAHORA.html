@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE> PROPRIEDADES/ MÉTODOS DE DATA E HORA </TITLE>
+</HEAD>
+<BODY>
+<CENTER><P><font size="3" face="verdadana"> <b> Data e Hora </b></font> </p>
+<SCRIPT LANGUAGE = Javascript>
+//------ obter data
+hoje = new Date();
+
+document.write(hoje + " <BR>");
+//----- dia, mes e ano
+dia = hoje.getDate();
+mes = hoje.getMonth();
+ano = hoje.getFullYear ();
+if(dia <10) dia = "0" + dia;
+if(mes< 10) mes = "0" + mes;
+
+document.write(" Hoje e: " +dia+ "/" + mes + "/" + ano + "<br>");
+
+//----- hora e minutos
+horas = hoje.getHours();
+minutos = hoje.getMinutes();
+if(horas <10) horas = "0" + horas;
+if(minutos < 10) minutos = "0" + minutos;
+document.write("Hora: " + horas + ":" + minutos+ "<br>");
+
+semana = hoje.getDay();
+document.write(semana);
+alert(hoje.toLocaleString());
+//-->
+</SCRIPT>
+</BODY>
+</HTML>

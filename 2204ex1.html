@@ -1,0 +1,17 @@
+<script>
+hoje = new Date();
+dia = hoje.getDate();
+mes = hoje.getMonth();
+ano = hoje.getFullYear();
+if(dia < 10) dia = "0" + dia;
+if(mes < 10) mes = "0" + mes;
+
+document.write(" Hoje é: "+dia+"/"+mes+"/"+ano+"<br>");
+
+//---- hora e minutos
+horas = hoje.getHours();
+minutos = hoje.getMinutes();
+if(horas < 10) horas = "0" + horas;
+if(minutos < 10) minutos = "0" + minutos;
+document.write("Hora: "+horas+":"+minutos+"<br>");
+</script>

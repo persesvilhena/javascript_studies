@@ -1,0 +1,14 @@
+<script>
+var teste = prompt("Digite o texto","texto");
+var tam = teste.length;
+var contaespaco = 0;
+contaespaco = parseInt(contaespaco);
+for(var i = tam-1; i>-1; i--){
+if(teste[i]==" "){
+contaespaco = contaespaco + 1;
+}
+
+}
+document.write("Quantidade de Espacos: " + contaespaco);
+document.write("Quantidade de Caracteres: " + tam);
+</script>

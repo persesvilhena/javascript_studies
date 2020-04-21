@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE> EXEMPLO DE ALGUMAS PROPRIEDADES DA PÁGINA COM EVENTOS em Imagens</TITLE>
+<SCRIPT language="Javascript">
+
+function diminuir()
+{
+    document.imagem.height= document.imagem.height - 10;
+}
+function aumentar()
+{
+    document.imagem.height= document.imagem.height + 10;
+}
+function bdiminuir()
+{
+    document.imagem.border= document.imagem.border - 1;
+}
+function baumentar()
+{
+    document.imagem.border= document.imagem.border + 1;
+}
+</SCRIPT>
+</HEAD>
+
+<BODY bgcolor="red">
+
+	<P name="texto2">  Teste de Troca de Propriedades de Imagens</P>
+	<BR>
+	
+	<INPUT TYPE="button" VALUE="-" onClick="diminuir()">
+	<INPUT TYPE="button" VALUE="+" onClick="aumentar()">
+	<INPUT TYPE="button" VALUE="b-" onClick="bdiminuir()">
+	<INPUT TYPE="button" VALUE="b+" onClick="baumentar()">
+	
+	<BR>
+		 
+	 <img src="1.jpg" border="0" name="imagem">
+	 <BR>
+	 
+	 
+</BODY>
+</HTML>

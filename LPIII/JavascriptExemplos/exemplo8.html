@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE> Usando o break e Continue </TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<SCRIPT LANGUAGE="Javascript">
+<!--
+	var resposta = "";
+	var correta = 20;
+	var pergunta = "Quanto é 10 + 10 ?";
+	var contagem = 2;
+		
+	for (var k=1; k<=3; k++)
+	{
+	  resposta = prompt(pergunta+ "\n Você tem três chances!","");
+	  if (resposta == "")
+	  {
+		break;
+	  }
+
+		if (resposta != correta)
+		{
+		  if (k != 3)
+		  {
+		    alert("Errado! Tente novamente.");
+			continue;
+		  }
+		  else alert("Você esgotou suas tentativas!");
+		}
+
+		if(resposta==correta)
+		{
+		 alert("Parabéns você acertou!");
+		 break;
+		} 
+	}   
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<BODY>
+</HTML> 

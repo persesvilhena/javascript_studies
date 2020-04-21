@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> Atividade 2 Lista </title>
+</head>
+<body>
+<SCRIPT LANGUAGE="Javascript">
+// Conversão de Dados para o Tipo Real Utilizando o parseFloat(Valor);
+	var numero;
+	var somatorio = 0;
+	var contador = 0;
+	var resp;
+	var media = 0;
+	
+	while( resp!= false )
+	{
+	 contador = parseInt(contador) + 1;
+	 numero = prompt("Digite um valor real",0.0);
+	 somatorio = parseFloat(somatorio) + parseFloat(numero);
+	
+	 resp=confirm("Você deseja digitar mais um novo valor ?");
+		
+	}
+	 media = parseFloat(somatorio)/parseFloat(contador);
+	 document.write(" Você inseriu " + contador + "Números <BR>");
+	 document.write(" A Média é :" + media);
+	
+		
+	
+</SCRIPT>
+</body>
+</html>

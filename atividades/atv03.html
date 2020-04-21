@@ -1,0 +1,19 @@
+<script>
+var sexo;
+var idade = 0;
+var f = 0;
+var m = 0;
+var x;
+for (x=0;x<10;x++){
+	idade = prompt("Idade: ","0");
+	sexo = prompt("Sexo: ","");
+	if (sexo == "feminino"){
+		f++;
+	}
+	if ((sexo == "masculino") && (idade < 18)){
+		m++;
+	}
+}
+document.write("Quantidade de homens com menos de 18 anos:"+ m);
+document.write("<br>Quantidade de mulheres: "+ f);
+</script>

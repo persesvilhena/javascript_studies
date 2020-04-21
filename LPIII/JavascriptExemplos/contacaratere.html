@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE> Contar Caracteres</TITLE>
+<SCRIPT LANGUAGE="Javascript">
+
+var teste = prompt("Digite o texto","texto");
+
+var tam = teste.length;
+var contaespaco = 0;
+var contavogal =0;
+contaespaco = parseInt(contaespaco);
+contavogal = parseInt(contavogal);
+
+teste = teste.toLowerCase( );
+
+for(var i= tam-1; i>-1; i--)
+{
+  if(teste[i]==" ")
+  {
+    contaespaco = contaespaco + 1;
+  }
+  
+   if(teste[i] == "a" || teste[i] == "e" || teste[i] == "i" || teste[i] == "o" || teste[i] == "u")
+  {
+    contavogal = contavogal + 1;
+  }
+}
+
+document.write("Quantidade de Espaços : " + contaespaco);
+document.write("<br>");
+document.write("Quantidade de Caracteres : " + tam);
+document.write("<br>");
+document.write("Quantidade de Vogais : " + contavogal);
+
+</SCRIPT>
+</body>
+</html>
